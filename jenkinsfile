@@ -5,7 +5,7 @@ pipeline {
             steps{
                 script {
                     def buildNumber = env.BUILD_NUMBER
-                    writeFile file: "build_${buildnumber}.txt", text: "this is file 1"
+                    writeFile file: "build_${buildNumber}.txt", text: "this is file 1"
                 }
             }
         }
